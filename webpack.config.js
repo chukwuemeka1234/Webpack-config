@@ -1,10 +1,12 @@
 const path = require('path');
+/* eslint-disable */
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+/* eslint-enable */
 
 module.exports = {
-  mode: 'development',  
+  mode: 'development',
   entry: {
-    index: './src/index.js'
+    index: './src/index.js',
   },
   devtool: 'inline-source-map',
   devServer: {
@@ -12,7 +14,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-        template: './src/index.html',
+      template: './src/index.html',
     }),
   ],
   output: {
